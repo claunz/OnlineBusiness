@@ -45,3 +45,12 @@ nav-sidebar > li > a {
     margin-bottom: 30px;
     text-align: center;
 }
+.btn-margin-left {
+    margin-left: 2px;
+}
+.btn-margin-right {
+    margin-right: 2px;
+}
+.btn-margin-4{
+    margin: 4px;
+}

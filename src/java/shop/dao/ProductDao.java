@@ -17,10 +17,10 @@ public class ProductDao implements IProductDao {
 
     public void saveProduct(Product product) {
         Transaction transaction = null;
-        Session session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.openSession();
         try{
             transaction = session.beginTransaction();
-            session.persist(product);
+            session.merge(product);
             transaction.commit();
         }catch(RuntimeException e){
             if(transaction != null)
