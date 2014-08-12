@@ -11,5 +11,13 @@ public class UserController implements Serializable{
 
     public UserController() {
     }
-    
+    public String register(){
+        return null;
+    }
+    public String doRegister(){
+        return null;
+    }
+    public String browseCustomers(){
+        return null;
+    }
 }

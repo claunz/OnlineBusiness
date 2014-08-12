@@ -12,5 +12,10 @@ public class CartController implements Serializable{
 
     public CartController() {
     }
-    
+    public String addProduct(){
+        return null;
+    }
+    public String viewCart(){
+        return null;
+    }
 }

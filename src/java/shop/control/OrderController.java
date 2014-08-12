@@ -10,5 +10,11 @@ public class OrderController {
 
     public OrderController() {
     }
+    public String browseOrders(){
+        return null;
+    }
+    public String viewOrderr(){
+        return null;
+    }
     
 }
