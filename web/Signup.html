@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>#{msgs.signTit}</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2">
+                #{msgs.firstName}:
+                <h:panelGroup>
+                    <h:inputText  id="fname" value="#{user.firstName}"/>
+                    <h:message for="fname" styleClass="errors"/>
+                </h:panelGroup>
+                #{msgs.lastName}:
+                <h:panelGroup>
+                    <h:inputText id="lname" value="#{user.lastName}"/>
+                    <h:message for="lname" styleClass="errors"/>
+                </h:panelGroup>
+                #{msgs.email}:
+                <h:panelGroup>
+                    <h:inputText id="email" value="#{user.email}" required="true" 
+
+                                 requiredMessage="#{msgs.emailErrMsg}" 
+                                 validatorMessage="#msgs.emailValErr">
+                        <f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@+[\w\.-]+[a-zA-Z0-9].+(com|net|org)" />
+                    </h:inputText>
+                    <h:message for="email" styleClass="errors"/>
+
+                </h:panelGroup>
+
+                #{msgs.password}:
+                <h:panelGroup>
+                    <h:inputSecret id="pass" value="#{user.password}"/>
+                    <h:message for="pass" styleClass="errors"/>
+                </h:panelGroup>
+
+                #{msgs.confPassword}:
+                <h:panelGroup>
+                    <h:inputSecret id="conpas" value="#{user.confPassword}"/> 
+                    <h:message for="conpas" styleClass="errors"/>
+                </h:panelGroup>
+                <hr/>
+            </h:panelGrid>
+            <h3>"#{msgs.bilAdress}</h3>
+            <h:panelGrid columns="2">
+                #{msgs.street}: 
+                <h:panelGroup>
+                    <h:inputText id="str" value="#{user.street}"/>
+                    <h:message for="str" styleClass="errors"/>
+            </h:panelGroup>
+
+            #{msgs.city}:
+            <h:panelGroup>
+                <h:inputText id="cit" value="#{user.city}"/>
+                <h:message for="cit" styleClass="errors"/>
+                </h:panelGroup>
+                #{msgs.state}:
+                <h:panelGroup>
+                    <h:inputText id="stat" value="#{user.state}"/>
+                    <h:message for="stat" styleClass="errors"/>
+                </h:panelGroup>
+                #{msgs.zip}:
+                <h:panelGroup>
+                    <h:inputText id="zip" value="#{user.zip}"/>
+                    <h:message for="zip" styleClass="errors"/>
+                </h:panelGroup>
+                #{msgs.country}:
+                <h:panelGroup>
+                    <h:inputText id="cout" value="#{user.country}"/>
+                    <h:message for="pass" styleClass="cont"/>
+                </h:panelGroup>
+                </h:panelGrid>
+        </h:form>
+        #{msgs.shipAddrMsg}
+        <h:selectBooleanCheckbox value="#{user.zsameAdd}"/>
+        <h:form>
+
+            <h:panelGrid columns="2">
+                #{msgs.street}: 
+                <h:panelGroup>
+                    <h:inputText id="str" value="#{user.street}"/>
+                    <h:message for="str" styleClass="errors"/>
+                </h:panelGroup>
+
+                #{msgs.city}:
+                <h:panelGroup>
+                    <h:inputText id="cit" value="#{user.city}"/>
+                    <h:message for="cit" styleClass="errors"/>
+                </h:panelGroup>
+                #{msgs.state}:
+                <h:panelGroup>
+                    <h:inputText id="stat" value="#{user.state}"/>
+                    <h:message for="stat" styleClass="errors"/>
+                </h:panelGroup>
+                #{msgs.zip}:
+                <h:panelGroup>
+                    <h:inputText id="zip" value="#{user.zip}"/>
+                    <h:message for="zip" styleClass="errors"/>
+                </h:panelGroup>
+                #{msgs.country}:
+                <h:panelGroup>
+                    <h:inputText id="cout" value="#{user.country}"/>
+                    <h:message for="pass" styleClass="cont"/>
+                </h:panelGroup>
+            </h:panelGrid>
+            <h:commandButton value="{msg.save}" action="#{control.doSave}"/>
+        </h:form>
+    </h:body>
+    <h:html>
+
