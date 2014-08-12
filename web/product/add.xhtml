@@ -7,6 +7,14 @@
          <ui:composition template="/WEB-INF/templates/maintemplate.xhtml" >
             <ui:define name="content">
                 <h1>Product Details</h1>
+                <h:form styleClass="form-horizontal">
+                    <div class="control-group">
+                        <label class="control-label" for="name">Name :</label>
+                        <div class="controls">
+                            <h:inputText value="" id="name" />
+                        </div>
+                    </div>
+                </h:form>
             </ui:define>
         </ui:composition>
     </h:body>

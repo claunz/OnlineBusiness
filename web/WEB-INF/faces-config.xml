@@ -12,13 +12,6 @@
          <var>msgs</var>
       </resource-bundle>
  </application>
- <navigation-rule>
-   	  <from-view-id>/index.xhtml</from-view-id>
-      <navigation-case>
-         <from-outcome>startOver</from-outcome>
-         <to-view-id>/product/index.xhtml</to-view-id>
-      </navigation-case>
-  </navigation-rule>
   <navigation-rule>
    	  <from-view-id>/*</from-view-id>
       <navigation-case>
@@ -48,24 +41,31 @@
       </navigation-case>
   </navigation-rule>
   <navigation-rule>
+   	  <from-view-id>/*</from-view-id>
+      <navigation-case>
+         <from-outcome>login</from-outcome>
+         <to-view-id>/login.xhtml</to-view-id>
+      </navigation-case>
+  </navigation-rule>
+  <navigation-rule>
       <from-view-id>/*</from-view-id>
       <navigation-case>
          <from-outcome>register</from-outcome>
-         <to-view-id>/customer/register.xhtml</to-view-id>
+         <to-view-id>/user/register.xhtml</to-view-id>
       </navigation-case>
   </navigation-rule>
   <navigation-rule>
    	  <from-view-id>/*</from-view-id>
       <navigation-case>
          <from-outcome>browseCustomers</from-outcome>
-         <to-view-id>/customer/index.xhtml</to-view-id>
+         <to-view-id>/user/index.xhtml</to-view-id>
       </navigation-case>
   </navigation-rule>
    <navigation-rule>
       <from-view-id>/*</from-view-id>
       <navigation-case>
          <from-outcome>viewCustomer</from-outcome>
-         <to-view-id>/customer/view.xhtml</to-view-id>
+         <to-view-id>/user/view.xhtml</to-view-id>
       </navigation-case>
   </navigation-rule>
    <navigation-rule>
