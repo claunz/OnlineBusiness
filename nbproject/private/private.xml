@@ -3,11 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Benybifa/Documents/NetBeansProjects/OnlineBusiness/src/java/message/message.properties</file>
             <file>file:/C:/Users/Benybifa/Documents/NetBeansProjects/OnlineBusiness/web/WEB-INF/web.xml</file>
             <file>file:/C:/Users/Benybifa/Documents/NetBeansProjects/OnlineBusiness/web/Login.xhtml</file>
             <file>file:/C:/Users/Benybifa/Documents/NetBeansProjects/OnlineBusiness/web/Signup.html</file>
             <file>file:/C:/Users/Benybifa/Documents/NetBeansProjects/OnlineBusiness/src/java/hibernate.cfg.xml</file>
+=======
+            <file>file:/Users/coco/Documents/workspace/OnlineBusiness/web/WEB-INF/web.xml</file>
+            <file>file:/Users/coco/Documents/workspace/OnlineBusiness/src/java/resources/messages.properties</file>
+            <file>file:/Users/coco/Documents/workspace/OnlineBusiness/web/WEB-INF/faces-config.xml</file>
+>>>>>>> origin/Jean-Claude
         </group>
     </open-files>
 </project-private>
