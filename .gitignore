@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 /build/
 nbproject/private/private.xml
 nbproject/private/private.properties
 nbproject/private/private.xml
+=======
+/build/
+>>>>>>> origin/Jean-Claude
+nbproject/private/private.properties
+nbproject/private/private.xml
+web/WEB-INF/web.xml
+web/index.xhtml
+web/index.xhtml
